@@ -53,19 +53,19 @@ $$Cov(x,y) = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n}$$
 $$r_{xy} = \frac{Cov(x,y)}{\sigma_x \sigma_y}$$ 
 * Spearman’s Rank Correlation ($\rho$): A non-parametric measure of correlation based on the ranks of data rather than actual values.
 $$\rho = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}$$ 
-### 1. Partial Correlation ($r_{12.3}$) 
+#### 1. Partial Correlation ($r_{12.3}$) 
 This formula removes the shared influence of variable 3 to see the "pure" relationship between 1 and 2. [5, 6] 
 $$r_{12.3} = \frac{r_{12} - r_{13}r_{23}}{\sqrt{(1 - r_{13}^2)(1 - r_{23}^2)}}$$ 
 
 * Logic: The numerator subtracts the path through the third variable ($r_{13}r_{23}$), and the denominator normalizes the result using the remaining variance. [1, 3] 
 
-### 2. Multiple Correlation ($R_{1.23}$)
+#### 2. Multiple Correlation ($R_{1.23}$)
 This formula measures how well variable 1 can be predicted by a combination of variables 2 and 3. [7, 8] 
 $$R_{1.23} = \sqrt{\frac{r_{12}^2 + r_{13}^2 - 2r_{12}r_{13}r_{23}}{1 - r_{23}^2}}$$ 
 
 * Logic: It combines the individual correlations of 1 with 2 and 3 while adjusting for the fact that 2 and 3 might already be correlated with each other ($r_{23}$). [8, 9] 
 
-#### Essential Tips for JAM MS:
+##### Essential Tips for JAM MS:
 
 * Non-negativity: Unlike simple or partial correlation (which range from -1 to 1), Multiple Correlation ($R$) is always non-negative and ranges from 0 to 1.
 * Relationship to Simple $r$: $R_{1.23}$ is never less than the absolute value of any simple correlation involving the dependent variable (i.e., $R_{1.23} \ge |r_{12}|$ and $R_{1.23} \ge |r_{13}|$).
