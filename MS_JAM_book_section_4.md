@@ -203,6 +203,14 @@ $$P(B_k|A) = \frac{P(A|B_k)P(B_k)}{\sum P(A|B_i)P(B_i)}$$
 * Zero and One: An event with probability $0$ or $1$ is independent of any other event.
 * Independent Complements: If $A$ and $B$ are independent, then $A$ and $B^c$, $A^c$ and $B$, and $A^c$ and $B^c$ are all also independent.
 * Common Variable Trap: Two events are often dependent if they both depend on a shared "hidden" random variable. Independence usually implies they come from physically unrelated processes.
+*  The "Product of Complements" Rule: Whenever you see "at least one" and "independent," stop trying to use Addition Theorem ($P(A)+P(B)-...$). Immediately switch to $1 - P(A^c)P(B^c)...$. It turns an $n$-term addition into a single multiplication.
+ Logarithmic Thinking: For very small probabilities $p$, $1 - (1-p)^n \approx np$. This is useful for quick mental checks in multiple-choice questions to see if your answer is in the right ballpark.
+*  Independence is "Information-Neutral": If $A$ and $B$ are independent, knowing $B$ happened gives you zero new information about $A$. If a question says "Given $B$ occurred, find $P(A)$," and they are independent, the answer is just $P(A)$. Don't over-calculate.
+*  The Intersection is the Minimum: For independent events, the probability of the intersection $P(A \cap B)$ is always less than or equal to the probability of either individual event. If your calculated intersection is larger than $P(A)$, you’ve made an error.
+*  Mutual Independence Test: Remember that for 3 events, $P(A \cap B \cap C) = P(A)P(B)P(C)$ is not enough to claim independence. You must also check that the pairs (AB, BC, AC) are independent. This is the most common "theoretical" trap in IIT JAM.
+
+
+
 
 
 
