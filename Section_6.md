@@ -1,5 +1,3 @@
-Let's break down the concepts of random vectors, their distributions, and conditional probabilities, keeping in mind the IIT JAM Mathematical Statistics perspective.
-
 ## Random Vectors
 
 ### Definition of Random Vectors
